@@ -1,0 +1,18 @@
+<h1>stupid answer</h1>
+<blockquote class="user">
+
+  <p>
+    <% if @question.blank? %>
+    😀
+    <% else %>
+      <%= @question %>
+    <% end %>
+  </p>
+  <cite>my message</cite>
+</blockquote>
+
+<blockquote class="coach">
+  <p><%= @answer %></p>
+  <cite>Your coach</cite>
+</blockquote>
+<<%= link_to "make another stupid question", ask_path %>>
